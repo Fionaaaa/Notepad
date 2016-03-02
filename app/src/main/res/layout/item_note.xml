@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:text="内容缩略图"
+        android:id="@+id/textView_content"
+        android:gravity="left|center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_toLeftOf="@+id/textView_create_time"
+        android:layout_toStartOf="@+id/textView_create_time" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:gravity="right|center"
+        android:text="创建时间"
+        android:textColor="@color/black_xh"
+        android:textSize="10sp"
+        android:id="@+id/textView_create_time"
+        android:layout_alignBottom="@+id/textView_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <com.fiona.notepad.view.SureCircleView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/sureCircleView"
+        android:visibility="invisible"
+        android:layout_alignBottom="@+id/textView_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</RelativeLayout>
